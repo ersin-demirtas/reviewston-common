@@ -1,2 +1,2 @@
-# reviewston-php
+# Reviewston
 Multi reviews service library for 7.4+
