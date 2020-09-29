@@ -38,6 +38,6 @@ class ProviderFactory
      */
     protected function getProviderClass($provider)
     {
-        return '\\ErsinDemirtas\Reviewston\\Provider\\' . ucfirst($provider) . 'Provider';
+        return '\\ErsinDemirtas\Reviewston\\' . ucfirst($provider) . '\\Provider';
     }
 }

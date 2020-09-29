@@ -18,7 +18,7 @@ class ProviderFactoryTest extends TestCase
 
     public static function setUpBeforeClass(): void
     {
-        \Mockery::mock('alias:ErsinDemirtas\\Reviewston\\Provider\\TestProvider');
+        \Mockery::mock('alias:ErsinDemirtas\\Reviewston\\Vendor\\Provider');
     }
 
     protected function setUp(): void
@@ -28,14 +28,14 @@ class ProviderFactoryTest extends TestCase
 
     public function testGetProviderClass()
     {
-        $gateway = $this->factory->create('Test');
-        $this->assertInstanceOf('ErsinDemirtas\\Reviewston\\Provider\\TestProvider', $gateway);
+        $gateway = $this->factory->create('Vendor');
+        $this->assertInstanceOf('ErsinDemirtas\\Reviewston\\Vendor\\Provider', $gateway);
     }
 
     public function testCreateInvalid()
     {
         $this->expectException(ProviderNotFoundException::class);
-        $this->expectExceptionMessage("The \ErsinDemirtas\Reviewston\Provider\NoneExistingProvider was not found!");
+        $this->expectExceptionMessage("The \ErsinDemirtas\Reviewston\NoneExisting\Provider was not found!");
         $gateway = $this->factory->create('NoneExisting');
     }
 }

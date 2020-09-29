@@ -4,7 +4,6 @@ namespace ErsinDemirtas\Reviewston\Tests\Provider;
 
 use ErsinDemirtas\Reviewston\Provider\AbstractProvider;
 use ErsinDemirtas\Reviewston\Tests\TestCase;
-use Psr\Http\Client\ClientInterface;
 
 /**
  * Class AbstractProviderTest
