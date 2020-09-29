@@ -1,5 +1,5 @@
 {
-    "name": "ersindemirtas/reviewston-php",
+    "name": "ersindemirtas/reviewston-common",
     "type": "metapackage",
     "description": "Reviewston multi reviews service library for 7.4+ library",
     "keywords": [
